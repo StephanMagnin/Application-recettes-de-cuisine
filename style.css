@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a, a:visited {
+  color: #222;
+}
+
+body {
+  background: url(./media/basic-pics/kitchen.jpeg) center/cover;
+  padding: 2rem;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body h1 {
+  font-size: 4.5rem;
+  margin: 1rem 0 2rem;
+  font-weight: 100;
+  color: #222;
+  text-shadow: 4px 2px 0 rgba(51, 51, 51, 0.452);
+}
+body #searchInput, body #randomMeal {
+  height: 2rem;
+  width: 300px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px #333;
+  font-size: 1.2rem;
+}
+body #searchInput {
+  transition: 0.2s ease;
+}
+body #searchInput:focus {
+  background: black;
+  color: white;
+  font-weight: 400;
+}
+body #randomMeal {
+  margin: 0 0 2rem 1rem;
+  background: linear-gradient(90deg, #d6d6d6 0%, #c2c2c2 100%);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+body #randomMeal:hover {
+  filter: brightness(130%);
+}
+body #results {
+  text-align: center;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .noResult {
+  font-size: 4rem;
+}
+body .searchContainer {
+  flex: 1 0 18%;
+  background: rgba(128, 128, 128, 0.4);
+  margin: 0.5rem;
+  padding: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #333;
+}
+body .searchContainer .infos {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+body .searchContainer img {
+  width: 90%;
+  max-width: 250px;
+  border-radius: 30px;
+  box-shadow: 0 4px 4px #222;
+  margin-bottom: 1rem;
+}
+body .searchContainer a {
+  display: inline-block;
+}
+body .searchContainer a i {
+  font-size: 1.4rem;
+}
+body .randomContainer {
+  clip-path: polygon(50% 0%, 100% 2%, 100% 98%, 50% 100%, 0 98%, 0 2%);
+  background: rgba(128, 128, 128, 0.4);
+  margin-bottom: 1.5rem;
+}
+body .randomContainer h2 {
+  padding: 1.5rem 0 0.5rem;
+  font-size: 2.7rem;
+  color: #252525;
+  text-shadow: 4px 2px 0 rgba(51, 51, 51, 0.252);
+}
+body .randomContainer .infos {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+body .randomContainer img {
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #333;
+}
+body .randomContainer p {
+  padding: 2rem;
+  font-weight: 700;
+}
+body .randomContainer a {
+  display: inline-block;
+  font-size: 4rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  animation: move 6s linear infinite;
+  color: #424242;
+}
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+  38% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
